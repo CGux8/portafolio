@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gustavo Ceballos - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Gustavo A. Ceballos S.
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          cgux08@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +573238225439
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">Acerca de mí</a>
+          <a class="topmenu" href="#skills">Habilidades</a>
+          <a class="topmenu" href="#projects">Proyectos</a>
+          <a class="topmenu" href="#recommendations">Recomendaciones</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/photo/2016/06/15/16/16/man-1459246_1280.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hola, Yo soy Gustavo Ceballos! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            Soy un desarrollador full stack con 2 años de experiencia tanto en la capa de aplicación como 
+            en la de presentación. He trabajado en aplicaciones y microservicios desplegados en IBM Cloud. 
+            Soy un ávido usuario de IBM Watson Services y he trabajado en Watson Assistant, NLU y Sentiment Analyzer, 
+            por nombrar algunos.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Habilidades</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 Años de experiencia</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 Años de experiencia</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+        <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p>2 Año de experiencia</p>
+          </div>  
+
+          <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>Node</h6>
+            <p>2 Año de experiencia</p>
+          </div>  
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Proyectos
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Chatbot</h3>
+            <ul>
+              <li>Desarrollé un sitio web seguro integrado con chatbot para un cliente de automóviles utilizando HTML, CSS, JavaScript e IBM Watson Assistant.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Reconocimiento facial</h3>
+            <ul>
+              <li>Desarrollé una app de reconocimiento facial para el ingreso del personal de una empresa</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Juego Habilidades</h3>
+            <ul>
+              <li>Desarrollé un juego para mejorar las habilidades fisicas y mentales mediante el uso del celular</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recomendaciones</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Gustavo aprende muy rápido y comprende rápidamente conceptos clave del desarrollo web. 
+          Tiene una gran actitud y es un excelente jugador de equipo. 
+          Toma la iniciativa dentro de un equipo y tiene potencial para liderar el equipo.
+
+
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Trabajar con Gustavo ha sido una experiencia increíble. 
+          Tiene un gran conocimiento y siempre da un paso más para asegurarse de que todo esté bien. 
+          Para cualquier proyecto futuro que necesite su experiencia, definitivamente me gustaría volver a trabajar con el.<span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Trabajé junto con Gustavo durante la fase inicial de nuestra empresa que necesitaba desarrollo web. 
+          Es un recurso comprometido que tiene un conocimiento profundo sobre el dominio. 
+          ¡Será un activo para cualquier organización!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Deja una recomendación</legend>          
+          <input type="text" placeholder="Nombre (Opcional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Mensaje"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Enviar</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+       </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Gracias por tu Recomendación</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
